@@ -9,8 +9,8 @@ const AdminEventlist = () => {
 
     const [data, setData] = useState([]);
     async function getAllCard() {
-        // const response = await axios.get("https://valt-be.onrender.com/getallevent").then((res)=>{
-        const response = await axios.get("https://valt-be.onrender.com/getallevent").then((res) => {
+        // const response = await axios.get("http://srv625873.hstgr.cloud:5000/getallevent").then((res)=>{
+        const response = await axios.get("http://srv625873.hstgr.cloud:5000/getallevent").then((res) => {
             setData(res.data);
         })
         console.log(response);

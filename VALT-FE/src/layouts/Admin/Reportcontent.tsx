@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useState , useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import OrgCardsset from "../../Elements/Admin/OrgCardsset"
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
@@ -7,28 +7,28 @@ const Reportcontent = () => {
     const navigate = useNavigate();
     const [isVisible, setIsVisible] = useState(true);
 
-    const [data,setData] = useState([]);
-    async function  getAllCard(){
-        // const response = await axios.get("https://valt-be.onrender.com/getorganizer").then((res)=>{
-        const response = await axios.get("https://valt-be.onrender.com/getorganizer").then((res)=>{
+    const [data, setData] = useState([]);
+    async function getAllCard() {
+        // const response = await axios.get("http://srv625873.hstgr.cloud:5000/getorganizer").then((res)=>{
+        const response = await axios.get("http://srv625873.hstgr.cloud:5000/getorganizer").then((res) => {
             setData(res.data);
         })
         console.log(response);
     }
-    useEffect(()=>{
+    useEffect(() => {
         getAllCard();
-    },[])
+    }, [])
 
     const handleClick = () => {
-      // Navigate to "/about" when the button is clicked
+        // Navigate to "/about" when the button is clicked
     };
 
     const handleButtonClick = () => {
         setIsVisible(!isVisible);
     };
-    return(
+    return (
         <div className="w-full flex flex-col text-[#777E90] lg:px-40 md:px-[39px] my-2">
-            
+
             <div className="flex w-full">
                 <div className="w-full justify-normal items-start my-4 rounded-3xl">
                     <div className="w-full flex-wrap sm:px-[16px] flex lg:flex-row sm:flex-col p-6 gap-x-8 sm:gap-y-8 rounded-3xl bg-darkgrayBackgroundColor justify-between">

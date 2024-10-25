@@ -27,11 +27,15 @@ const ConfirmInv = ({ vipb_invnum, gen_invnum, vip_invnum }: any) => {
                     abi: BINANCE_PRESALE_CONTRACT_ABI,
                     address: TEST_VALT_PRESALE_ADDRESS,
                     functionName: "buyTokenWithUSDT",
-                    args: [5 * 10 ** 8],
+                    args: [5 * 10 ** 6],
                 }).then(() => {
                     navigate(`/purchase/${id}`);
-                }).catch(() => { });
-            }).catch(() => { });
+                }).catch((error: any) => {
+                    console.log(error);
+                });
+            }).catch((error: any) => {
+                console.log(error);
+            });
         } catch (error: any) {
             console.log(error);
         }
