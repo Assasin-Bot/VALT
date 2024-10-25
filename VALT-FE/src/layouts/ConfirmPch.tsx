@@ -47,9 +47,9 @@ const ConfirmInv = ({ gen_invnum }: any) => {
                             <div className="flex bg-grayColor rounded-full w-12 h-12 justify-center items-center">
                                 <div className="flex">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_9052)">
-                                            <path d="M3 1L15 5V23L3 19V1ZM3 1H21V19H18" stroke="#FCFCFD" strokeWidth="2" stroke-miterlimit="10" />
-                                            <path d="M11 13V15" stroke="#FCFCFD" strokeWidth="2" stroke-miterlimit="10" strokeLinecap="square" />
+                                        <g clipPath="url(#clip0_1_9052)">
+                                            <path d="M3 1L15 5V23L3 19V1ZM3 1H21V19H18" stroke="#FCFCFD" strokeWidth="2" strokeMiterlimit="10" />
+                                            <path d="M11 13V15" stroke="#FCFCFD" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_1_9052">

@@ -62,8 +62,8 @@ const AdminEventlistbar = () => {
                         />
                         <div className="inline-flex w-8 h-8 px-auto items-center py-auto rounded-[16px] ring-2 ring-inset ring-current">
                             <svg className="mx-auto" width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 8C15 12.32 8 19.375 8 19.375C8 19.375 1 12.32 1 8C1 3.57 4.617 1 8 1C11.383 1 15 3.57 15 8Z" stroke="#777E91" strokeWidth="2" stroke-miterlimit="10" strokeLinecap="square"/>
-                                <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" stroke="#777E91" strokeWidth="2" stroke-miterlimit="10" strokeLinecap="square"/>
+                                <path d="M15 8C15 12.32 8 19.375 8 19.375C8 19.375 1 12.32 1 8C1 3.57 4.617 1 8 1C11.383 1 15 3.57 15 8Z" stroke="#777E91" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square"/>
+                                <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" stroke="#777E91" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square"/>
                             </svg>
                         </div>
                     </div>

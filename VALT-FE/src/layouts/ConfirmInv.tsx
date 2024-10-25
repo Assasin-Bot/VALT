@@ -7,7 +7,7 @@ import {
 
 import BINANCE_PRESALE_CONTRACT_ABI from "../utils/binanceABI.json";
 import BINANCE_USDT_CONTRACT_ABI from "../utils/bep20.json";
-import { BINANCE_VALT_CONTRACT_ADDRESS, USDT_ADDRESS_ON_BINANCE } from "../utils";
+import { TEST_VALT_TOKEN_ADDRESS, TEST_VALT_PRESALE_ADDRESS, TEST_USDT_TOKEN_ADDRESS } from "../utils";
 
 const ConfirmInv = ({ vipb_invnum, gen_invnum, vip_invnum }: any) => {
     const navigate = useNavigate();
@@ -16,32 +16,25 @@ const ConfirmInv = ({ vipb_invnum, gen_invnum, vip_invnum }: any) => {
 
     const { writeContractAsync } = useWriteContract();
     const handleClick = async () => {
-        let approved: any = false;
         try {
-            await writeContractAsync({
+            writeContractAsync({
                 abi: BINANCE_USDT_CONTRACT_ABI,
-                address: USDT_ADDRESS_ON_BINANCE,
+                address: TEST_USDT_TOKEN_ADDRESS,
                 functionName: "approve",
-                args: [BINANCE_VALT_CONTRACT_ADDRESS, 3000],
-            });
-            approved = true;
-        } catch (error: any) {
-            console.error(error);
-        }
-        if (!approved) return;
-        try {
-            let hash = await writeContractAsync({
-                abi: BINANCE_PRESALE_CONTRACT_ABI,
-                address: BINANCE_VALT_CONTRACT_ADDRESS,
-                functionName: "buyTokenWithUSDT",
-                args: [3000],
-            });
-            console.log("Purchase Success");
-
+                args: [TEST_VALT_PRESALE_ADDRESS, 5 * 10 ** 8],
+            }).then(res => {
+                writeContractAsync({
+                    abi: BINANCE_PRESALE_CONTRACT_ABI,
+                    address: TEST_VALT_PRESALE_ADDRESS,
+                    functionName: "buyTokenWithUSDT",
+                    args: [5 * 10 ** 8],
+                }).then(() => {
+                    navigate(`/purchase/${id}`);
+                }).catch(() => { });
+            }).catch(() => { });
         } catch (error: any) {
             console.log(error);
         }
-        navigate(`/purchase/${id}`);
     };
     const handlemainpage = () => {
         navigate('/');
