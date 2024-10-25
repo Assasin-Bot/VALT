@@ -91,62 +91,27 @@ const ConfirmInv = ({ vipb_invnum, gen_invnum, vip_invnum }: any) => {
                                     </svg>
                                 </div>
                             </div> */}
-                            <select name="coin" className="h-12 w-[156px] px-5 text-whiteTextColor text-[16px] leading-[24px] flex appearance-none ring-2 ring-inset ring-greenColor rounded-[12px] bg-transparent justify-center items-center">
-                                <option value="" className='text-grayTextColor text-[24px] leading-[24px]'>
-                                    <div className="inline-flex w-8 h-8 px-auto items-center py-auto justify-between">
-                                        <svg className="mx-auto" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.58366 12.2223C6.58366 13.2962 7.45422 14.1667 8.5281 14.1667H10.3337C11.4843 14.1667 12.417 13.234 12.417 12.0834C12.417 10.9328 11.4843 10.0001 10.3337 10.0001H8.66699C7.5164 10.0001 6.58366 9.06734 6.58366 7.91675C6.58366 6.76616 7.5164 5.83341 8.66699 5.83341H10.4725C11.5464 5.83341 12.417 6.70397 12.417 7.77786M9.50033 4.58341V5.83341M9.50033 14.1667V15.4167M17.8337 10.0001C17.8337 14.6025 14.1027 18.3334 9.50033 18.3334C4.89795 18.3334 1.16699 14.6025 1.16699 10.0001C1.16699 5.39771 4.89795 1.66675 9.50033 1.66675C14.1027 1.66675 17.8337 5.39771 17.8337 10.0001Z" stroke="#00CE21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p className="pr-6 text-white">USDT</p>
+                            <select name="coin" className="bg-gray-50 font-bold text-lg text-gray-900 ring-2 ring-greenColor focus:ring-greenColor text-sm rounded-lg block p-2.5 w-40 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white">
+                                <option value="" className='text-grayTextColor'>
+                                    USDT
                                 </option>
-                                <option value="" className='text-grayTextColor text-[24px] leading-[24px]'>
-                                    <div className="inline-flex w-8 h-8 px-auto items-center py-auto justify-between">
-                                        <svg className="mx-auto" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.58366 12.2223C6.58366 13.2962 7.45422 14.1667 8.5281 14.1667H10.3337C11.4843 14.1667 12.417 13.234 12.417 12.0834C12.417 10.9328 11.4843 10.0001 10.3337 10.0001H8.66699C7.5164 10.0001 6.58366 9.06734 6.58366 7.91675C6.58366 6.76616 7.5164 5.83341 8.66699 5.83341H10.4725C11.5464 5.83341 12.417 6.70397 12.417 7.77786M9.50033 4.58341V5.83341M9.50033 14.1667V15.4167M17.8337 10.0001C17.8337 14.6025 14.1027 18.3334 9.50033 18.3334C4.89795 18.3334 1.16699 14.6025 1.16699 10.0001C1.16699 5.39771 4.89795 1.66675 9.50033 1.66675C14.1027 1.66675 17.8337 5.39771 17.8337 10.0001Z" stroke="#00CE21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p className="pr-6 text-white">ETH</p>
+                                <option value="">
+                                    ETH
                                 </option>
-                                <option value="" className='text-grayTextColor text-[24px] leading-[24px]'>
-                                    <div className="inline-flex w-8 h-8 px-auto items-center py-auto justify-between">
-                                        <svg className="mx-auto" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.58366 12.2223C6.58366 13.2962 7.45422 14.1667 8.5281 14.1667H10.3337C11.4843 14.1667 12.417 13.234 12.417 12.0834C12.417 10.9328 11.4843 10.0001 10.3337 10.0001H8.66699C7.5164 10.0001 6.58366 9.06734 6.58366 7.91675C6.58366 6.76616 7.5164 5.83341 8.66699 5.83341H10.4725C11.5464 5.83341 12.417 6.70397 12.417 7.77786M9.50033 4.58341V5.83341M9.50033 14.1667V15.4167M17.8337 10.0001C17.8337 14.6025 14.1027 18.3334 9.50033 18.3334C4.89795 18.3334 1.16699 14.6025 1.16699 10.0001C1.16699 5.39771 4.89795 1.66675 9.50033 1.66675C14.1027 1.66675 17.8337 5.39771 17.8337 10.0001Z" stroke="#00CE21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p className="pr-6 text-white">BTC</p>
+                                <option value="">
+                                    BTC
                                 </option>
-                                <option value="" className='text-grayTextColor text-[24px] leading-[24px]'>
-                                    <div className="inline-flex w-8 h-8 px-auto items-center py-auto justify-between">
-                                        <svg className="mx-auto" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.58366 12.2223C6.58366 13.2962 7.45422 14.1667 8.5281 14.1667H10.3337C11.4843 14.1667 12.417 13.234 12.417 12.0834C12.417 10.9328 11.4843 10.0001 10.3337 10.0001H8.66699C7.5164 10.0001 6.58366 9.06734 6.58366 7.91675C6.58366 6.76616 7.5164 5.83341 8.66699 5.83341H10.4725C11.5464 5.83341 12.417 6.70397 12.417 7.77786M9.50033 4.58341V5.83341M9.50033 14.1667V15.4167M17.8337 10.0001C17.8337 14.6025 14.1027 18.3334 9.50033 18.3334C4.89795 18.3334 1.16699 14.6025 1.16699 10.0001C1.16699 5.39771 4.89795 1.66675 9.50033 1.66675C14.1027 1.66675 17.8337 5.39771 17.8337 10.0001Z" stroke="#00CE21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p className="pr-6 text-white">SOL</p>
+                                <option value="">
+                                    SOL
                                 </option>
-                                <option value="" className='text-grayTextColor text-[24px] leading-[24px]'>
-                                    <div className="inline-flex w-8 h-8 px-auto items-center py-auto justify-between">
-                                        <svg className="mx-auto" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.58366 12.2223C6.58366 13.2962 7.45422 14.1667 8.5281 14.1667H10.3337C11.4843 14.1667 12.417 13.234 12.417 12.0834C12.417 10.9328 11.4843 10.0001 10.3337 10.0001H8.66699C7.5164 10.0001 6.58366 9.06734 6.58366 7.91675C6.58366 6.76616 7.5164 5.83341 8.66699 5.83341H10.4725C11.5464 5.83341 12.417 6.70397 12.417 7.77786M9.50033 4.58341V5.83341M9.50033 14.1667V15.4167M17.8337 10.0001C17.8337 14.6025 14.1027 18.3334 9.50033 18.3334C4.89795 18.3334 1.16699 14.6025 1.16699 10.0001C1.16699 5.39771 4.89795 1.66675 9.50033 1.66675C14.1027 1.66675 17.8337 5.39771 17.8337 10.0001Z" stroke="#00CE21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p className="pr-6 text-white">BNB</p>
+                                <option value="">
+                                    BNB
                                 </option>
-                                <option value="" className='text-grayTextColor text-[24px] leading-[24px]'>
-                                    <div className="inline-flex w-8 h-8 px-auto items-center py-auto justify-between">
-                                        <svg className="mx-auto" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.58366 12.2223C6.58366 13.2962 7.45422 14.1667 8.5281 14.1667H10.3337C11.4843 14.1667 12.417 13.234 12.417 12.0834C12.417 10.9328 11.4843 10.0001 10.3337 10.0001H8.66699C7.5164 10.0001 6.58366 9.06734 6.58366 7.91675C6.58366 6.76616 7.5164 5.83341 8.66699 5.83341H10.4725C11.5464 5.83341 12.417 6.70397 12.417 7.77786M9.50033 4.58341V5.83341M9.50033 14.1667V15.4167M17.8337 10.0001C17.8337 14.6025 14.1027 18.3334 9.50033 18.3334C4.89795 18.3334 1.16699 14.6025 1.16699 10.0001C1.16699 5.39771 4.89795 1.66675 9.50033 1.66675C14.1027 1.66675 17.8337 5.39771 17.8337 10.0001Z" stroke="#00CE21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p className="pr-6 text-white">POL</p>
+                                <option value="">
+                                    POL
                                 </option>
                             </select>
-                            <div className="absolute mr-24 h-full pointer-events-none inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z" fill="#FCFCFD" />
-                                </svg>
-                            </div>
-                            <p className="text-[32px] leading-[48px] font-Poppins text-white px-5">3000</p>
+                            <p className="text-xl leading-[48px] font-Poppins text-white px-5">3000</p>
                         </div>
                         <div className="flex flex-col w-full justify-center items-center py-4">
                             <p className="text-[18px] leading-[32px] sm:text-[28px] font-Poppins text-grayTextColor py-4">you will not be able to cancel the transaction or refuse it</p>

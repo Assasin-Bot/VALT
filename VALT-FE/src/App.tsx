@@ -20,16 +20,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <Home />}/>
-        <Route path="/detail/:id" element={<Detail/>} />
-        <Route path="/invite/:id" element={<Invite/>} />
-        <Route path="/purchase/:id" element={<Purchase/>} />
-        <Route path="/complete/:id" element={<Complete/>} />
-        <Route path="/admin/addevent" element={<Addevent/>} />
-        <Route path="/admin" element={ <AdminHome />}/>
-        <Route path="/admin/organizer" element={ <Organizers />}/>
-        <Route path="/admin/report" element={ <Report />}/>
-        <Route path="/admin/addorganizer" element={ <Addorganizers />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/invite/:id" element={<Invite />} />
+        <Route path="/purchase/:id" element={<Purchase />} />
+        <Route path="/complete/:id" element={<Complete />} />
+        <Route path="/admin/addevent" element={<Addevent />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/admin/organizer" element={<Organizers />} />
+        <Route path="/admin/report" element={<Report />} />
+        <Route path="/admin/addorganizer" element={<Addorganizers />} />
       </Routes>
     </BrowserRouter>
   );

@@ -60,14 +60,14 @@ const Header = () => {
                         <img src="/assets/img/valt.png" className="w-10 h-10" alt="VALT"></img>
                         <p className="ml-[10px] text-[12px] font-bold text-greyfont">$VALT</p>
                         <p className="pl-6 text-[20px] md:text-[14px] font-semibold">
-                            {!valtBalance ? "0" : Number(valtBalance) / 10 ** 6}
+                            1
                         </p>
                     </div>
                     <div className="flex flex-row items-center sm:hidden">
                         <img src="/assets/img/USDT.png" className="w-10 h-10" alt="USDT"></img>
                         <p className="ml-[10px] text-[12px] font-bold text-greyfont">$USDT</p>
                         <p className="pl-6  text-[18px] md:text-[12px] font-semibold">
-                            {!usdtBalance ? "0" : Number(usdtBalance) / 10 ** 6}
+                            1
                         </p>
                     </div>
 
@@ -75,7 +75,7 @@ const Header = () => {
                         <img src="/assets/img/BTC.png" className="w-10 h-10" alt="BTC"></img>
                         <p className="ml-[10px] text-[12px] font-bold text-greyfont">$BtC</p>
                         <p className="pl-6  text-[18px] md:text-[12px] font-semibold">
-                            {!btcBalance ? "0" : Number(btcBalance) / 10 ** 6}
+                            N/A
                         </p>
                     </div>
 
@@ -83,7 +83,7 @@ const Header = () => {
                         <img src="/assets/img/Eth.png" className="w-10 h-10" alt="ETH"></img>
                         <p className="ml-[10px] text-[12px] font-bold text-greyfont">$ETH</p>
                         <p className="pl-6  text-[18px] md:text-[12px] font-semibold">
-                            {!ethBalance ? "0" : Number(ethBalance) / 10 ** 6}
+                            N/A
                         </p>
                     </div>
 
